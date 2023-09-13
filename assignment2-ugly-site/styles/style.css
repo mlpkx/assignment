@@ -1,29 +1,46 @@
 body {
-  color: red;
+  font-family: "Comic Sans MS", sans-serif;
+  background-color:darkred;
+  margin: 0;
+  padding: 0;
 }
 
+.content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: black;
+  border: 5px dashed darkred;
+}
+
+
+
 h1 {
-  color: red;
+  background-color: rgb(14, 175, 108);
+  color:chocolate;
+  text-align: center;
   font-family: monospace;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin-top: 20px;
 }
 
 .gif-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .giphy-embed {
-  position: absolutel;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
+  width: 48%;
+  border: 3px solid #000;
 }
 
-.giphy-embed:nth-child(2) {
-  left: 50%;
+img {
+  display: block;
+  margin: 20px auto;
 }
