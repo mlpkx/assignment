@@ -1,18 +1,41 @@
 body {
-  cursor: url("./assets/img/icon.cur"), auto;
   font-family: "Comic Sans MS", sans-serif;
+  font-size: 16px;
   background-color:darkred;
+  cursor: url("../assets/img/icon.cur"), auto;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
+}
+
+body::before, body::after {
+  content: ""; 
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: calc((100vw - 900px) / 2); 
+  z-index: -1;
+}
+
+body::before {
+  left: 0;
+  background: url("../assets/img/6.png") no-repeat center center;
+  background-size: cover;
+}
+
+body::after {
+  right: 0;
+  background: url("../assets/img/5.png") no-repeat center center;
+  background-size: cover;
 }
 
 .content {
-  max-width: 900px;
-  margin: 20px auto;
+  max-width: 1200px;
+  margin: 30px auto;
   padding: 20px;
   background-color: black;
   border: 5px dashed darkred;
@@ -24,6 +47,18 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
+}
+
+.main-image {
+  border: 5px dotted blue;
+  margin-bottom: 5%;
+}
+
+.small-image {
+  width: 50px;
+  height: 50px;
+  border: 3px solid blueviolet;
+  transform: rotate(-5deg);
 }
 
 ul {
@@ -47,18 +82,23 @@ li:hover {
 }
 
 h1 {
+  font-size: 36px;
+  font-size: bold;
   background-color: rgb(14, 175, 108);
   color:chocolate;
   text-align: center;
   font-family: monospace;
-  padding: 10px 0;
+  text-transform: uppercase;
+  padding: 20px 0;
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 1.5;
   margin-top: 20px;
-  text-align: center;
+  text-align: justify;
+  letter-spacing: 1px;
+  margin: 20px 0;
   color:chartreuse;
 }
 
