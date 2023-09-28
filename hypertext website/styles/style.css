@@ -1,0 +1,85 @@
+body, html {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('../assets/img/background.png') no-repeat center center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.website-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-room {
+  width: 60vw;
+  text-align: center;
+  padding: 2vw;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  position: relative; 
+}
+
+#poet-figure {
+  width: 15%; 
+  max-width: 250px;
+  min-width: 100px;
+  margin-top: -5%; 
+}
+
+h1 {
+  font-size: 3vw;
+  color: #333;
+  margin-bottom: 1vw;
+}
+
+h2 {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+h2.current-time {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #000000;
+  letter-spacing: 3px;     
+}
+
+.intro-paragraph {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 2vw;
+  font-size: 1.2vw;
+}
+
+.icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #999;
+  margin: 0 auto;
+  border-radius: 50%; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 1024px) {
+  #main-room {
+      width: 90%;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  .intro-paragraph {
+      font-size: 1rem;
+  }
+}
