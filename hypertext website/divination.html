@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divination Game</title>
+    <link rel="stylesheet" href="styles/divination.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="passage" id="divination">
+        <h2>Bamboo Divination</h2>
+        <div class="theme-container">
+            <div class="theme-item">
+                <img src="./assets/img/river.JPG" class="divination-image" alt="river">
+                <button onclick="goToPassage('river')">River</button>
+            </div>
+            <div class="theme-item">
+                <img src="./assets/img/shrine.JPG" class="divination-image" alt="shrine">
+                <button onclick="goToPassage('shrine')">Shrine</button>
+            </div>
+            <div class="theme-item">
+                <img src="./assets/img/sakura.jpg" class="divination-image" alt="sakura">
+                <button onclick="goToPassage('sakura')">Sakura</button>
+            </div>
+            <div class="theme-item">
+                <img src="./assets/img/mountain.JPG" class="divination-image" alt="mountain">
+                <button onclick="goToPassage('mountain')">Mountain</button>
+            </div>
+        </div>
+        <audio src="./assets/sound/Sayonara Sun.mp3" autoplay loop></audio>
+    </div>
+</body>
+</html>
