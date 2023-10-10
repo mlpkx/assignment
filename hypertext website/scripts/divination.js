@@ -1,50 +1,58 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let timeElement = document.querySelector(".current-time");
+let poetFigure = document.getElementById("poetFigure");
+let masaakiVoice = document.getElementById("masaakiVoice");
+let startTime = Date.now();
 
-    function updateTime() {
-        let d = new Date();
-        let options = {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit'
-        };
-        timeElement.innerHTML = d.toLocaleDateString('en-US', options) 
+let audioPlayed = false;
+
+function oscillate() {
+    let timePassed = Date.now() - startTime;
+    let shift = Math.sin(timePassed / 2000) * 10; 
+    poetFigure.style.transform = `translateY(${shift}px)`;
+    requestAnimationFrame(oscillate);
+}
+
+oscillate();
+
+
+function showChatBox() {
+    if (!audioPlayed) {
+        masaakiVoice.play();
+        audioPlayed = true;
     }
+
+    document.getElementById('poetFigure').style.display = 'none';
+    document.getElementById("instructionBox").style.display = 'none';
+    let chatBox = document.getElementById('chatBox');
+    chatBox.style.display = 'block';
+    setTimeout(function() {
+        chatBox.style.opacity = 1;
+    }, 50);
+        
+}
+
+function submitName() {
+    const userName = document.getElementById('userNameInput').value;
     
-    updateTime();
-    setInterval(updateTime, 1000);  
-    
-    function toggleSidebar() {
-        const sidebar = document.querySelector('.sidebar');
-        if (sidebar.style.width === "0px" || sidebar.style.width === "") {
-            sidebar.style.width = "250px"; 
-        } else {
-            sidebar.style.width = "0px";
-        }
+    if (!userName) {
+        alert('Please enter your name.');
+        return;
     }
+
+    masaakiVoice.pause();
+    masaakiVoice.currentTime = 0;
     
 
-    document.querySelector('.menu-icon').addEventListener('click', toggleSidebar);
-});
+    document.getElementById('chatBox').style.display = 'none';
 
-document.addEventListener('click',function(event) {
-    const sidebar = document.querySelector('.sidebar');
-    const menuIcon = document.querySelector('.menu-icon');
+    const divinationContent = document.getElementById('divination');
+    divinationContent.querySelector('h2').textContent = `Hello ${userName}, this is Masaaki again. Which view speaks to you today? Pick one!`;
+    divinationContent.style.display = 'block';
+    setTimeout(function() {
+        divinationContent.style.opacity = 1;
+    }, 50);
+}
 
-    if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
-        sidebar.style.width = "0px";
-    }
-});
-document.addEventListener('click', function(event) {
-    const sidebar = document.querySelector('.sidebar');
-    const menuIcon = document.querySelector('.menu-icon');
+function goToPassage(theme) {
+    alert(`You chose the ${theme}.`);
+}
 
-    if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
-        sidebar.style.width = "0px";
-    }
-});
-   

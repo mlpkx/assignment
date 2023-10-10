@@ -6,32 +6,52 @@
     <title>Divination Game</title>
     <link rel="stylesheet" href="styles/divination.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="poet-figure" onclick="showChatBox()">
+        <img src="./assets/img/poet1.png" alt="Poet Figure" id="poetFigure">
+        <div id="instructionBox">
+            <p id="instruction">Click me to talk to Masaaki</p>
+        </div>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <p id="intro">Hello, I am Masaaki. <br>Today, I invite you to join me on a short trip through the realms of poetry. 
+            <br>As a poet and diviner, I hope to capture the essence of your current emotions with a few lines. 
+            <br>May I have your name?</p>
+        <audio id="masaakiVoice" src="./assets/sound/masaakivoice.mp3" ></audio>
+        <input type="text" id="userNameInput" placeholder="Enter your name here..." />
+        <button onclick="submitName()">Enter</button>
+    </div>
+        
     <div class="passage" id="divination">
-        <h2>Bamboo Divination</h2>
+        <h2>Which view speaks to you today?</h2>
         <div class="theme-container">
             <div class="theme-item">
                 <img src="./assets/img/river.JPG" class="divination-image" alt="river">
+                <p>Picture a flowing river, ever-moving, ever-changing. It reflects life's continuous journey. <br> Does today's mood find you seeking the calm of its banks or navigating its deeper currents?</p>
                 <button onclick="goToPassage('river')">River</button>
             </div>
             <div class="theme-item">
                 <img src="./assets/img/shrine.JPG" class="divination-image" alt="shrine">
+                <p>Think of a tranquil place. Does it draw you in for a moment of quiet reflection, <br> or do you find yourself momentarily disconnected from reality?</p>
                 <button onclick="goToPassage('shrine')">Shrine</button>
             </div>
             <div class="theme-item">
                 <img src="./assets/img/sakura.jpg" class="divination-image" alt="sakura">
+                <p>Imagine an ocean of cherry blossoms, pink, soft, and transient. <br> Do they stir feelings of fleeting beauty in you, or evoke a sense of precious memories in spring? </p>
                 <button onclick="goToPassage('sakura')">Sakura</button>
             </div>
             <div class="theme-item">
                 <img src="./assets/img/mountain.JPG" class="divination-image" alt="mountain">
+                <p>Envision vast mountain tops and layers of mountain ranges. <br> Can you feel the gentle breeze, hear the bird chirping, and see the floating clouds?</p>
                 <button onclick="goToPassage('mountain')">Mountain</button>
             </div>
         </div>
-        <audio src="./assets/sound/Sayonara Sun.mp3" autoplay loop></audio>
     </div>
+    <script src="scripts/divination.js"></script>
 </body>
 </html>
