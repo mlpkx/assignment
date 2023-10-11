@@ -43,19 +43,19 @@ body, html {
 
 
 #instruction {
-  font-size: 50px;
-  font-family:'Fredericka the Great', cursive, sans-serif;
-  margin: 0;
-  color: darkslategrey;
-  transition: opacity 0.3s ease;
+    font-size: 50px;
+    font-family:'Fredericka the Great', cursive, sans-serif;
+    margin: 0;
+    color: darkslategrey;
+    transition: opacity 0.3s ease;
 }
 
 #intro {
-  font-size: 30px;
-  font-family:'Fredericka the Great', cursive, sans-serif;
-  margin: 0;
-  color: darkslategrey;
-  transition: opacity 0.3s ease;
+    font-size: 30px;
+    font-family:'Fredericka the Great', cursive, sans-serif;
+    margin: 0;
+    color: darkslategrey;
+    transition: opacity 0.3s ease;
 }
 
 .poet-figure:hover #instruction {

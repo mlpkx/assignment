@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River theme</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mountain.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="passage" id="river-theme">
-        <h2>Choose Your Element</h2>
+    <div class="passage" id="mountain-theme">
+        <div class="passage" id="mountain-theme">
+            <p>Ever heard of the "Five Elements" or "Wu Xing"? 
+                <br>This super cool idea tells us that everything around us, <br> including our vibes and moods, can be associated to five core elements: 
+                <br><span class="element-metal">Metal</span>, <span class="element-wood">Wood</span>, <span class="element-water">Water</span>, <span class="element-fire">Fire</span>, <span class="element-earth">Earth</span>. <br>Each one has its own unique energy. Some days, you might be feeling that fiery passion, <br> while on others, you're just flowing like water. <br> It's all about what the universe is whispering to you. <br> So tell me, which of these elements is calling out to you today? </p>
+            <h2>There are two types of elements in the mountain poems. Choose Your Element.</h2>
         <div class="theme-container">
-            <div class="theme-item">
-                <img src="./assets/img/tree.png" class="divination-image" alt="wood">
-                <button onclick="goToPoem('river', 'wood')">Wood</button>
+            <div class="theme-item earth" onmouseover="zoomIn('earth')" onmouseout="zoomOut('earth')">
+                <img src="./assets/img/earth.png" class="divination-image" alt="earth">
+                <button onclick="goToPoem('mountain', 'earth')">Earth</button>
             </div>
-            <div class="theme-item">
-                <img src="./assets/img/water.png" class="divination-image" alt="water">
-                <button onclick="goToPoem('river', 'water')">Water</button>
+            <div class="theme-item fire" onmouseover="zoomIn('fire')" onmouseout="zoomOut('fire')">
+                <img src="./assets/img/fire.png" class="divination-image" alt="fire">
+                <button onclick="goToPoem('mountain', 'fire')">Fire</button>
             </div>
         </div>
     </div>
+    <script src="scripts/mountain.js"></script>
 </body>
 </html>

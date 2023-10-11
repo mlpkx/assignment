@@ -53,6 +53,20 @@ function submitName() {
 }
 
 function goToPassage(theme) {
-    alert(`You chose the ${theme}.`);
+        switch (theme) {
+            case 'river':
+                window.location.href = 'River.html';
+                break;
+                case 'shrine':
+                window.location.href = 'Shrine.html';
+                break;
+                case 'sakura':
+                window.location.href = 'Sakura.html';
+                break;
+                case 'mountain':
+                window.location.href = 'Mountain.html';
+                break;
 }
+    }
+
 

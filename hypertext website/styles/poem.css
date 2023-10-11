@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    font-family: 'Fredericka the Great', cursive, sans-serif;
+}
+
+    #canvas-container {
+        position: fixed;
+        z-index: 2;
+        top: 20%;
+        left: 0;
+        width: 100%;
+        height: 80%;
+    }
+
+    #canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+.poem-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 60%;
+}
+
+.luck, .translation {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2vw; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.luck {
+    position: absolute;
+    top: 2%;
+    Left: 75%;
+    transform: translateX(-50%); 
+    background-color: rgba(255, 182, 193, 0.7); 
+    border-radius: 50px;
+}
+
+.translation {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    transform: translateX(-50%); 
+    background-color: rgba(194, 243, 177, 0.322);
+}
+
+    #poet3 {
+        position: absolute;
+        top: 2%;
+        left: calc(50% + 10vw);
+    z-index: 3;
+    width: 15vw;
+    max-width: 200px;
+    }
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #7f3521, #404c49);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 0.8em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px 0;
+    left: 20px;
+    z-index: 5;
+  }
+
+  .icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2);
+  }
+
+@media (max-width: 1200px) {
+    .luck, .translation {
+        font-size: clamp (10px, 4vw, 24px);
+    } 
+    .luck {
+        top: 1%;
+    }
+.translation {
+    bottom: 5%;
+}
+
+    #poet3 {
+        width: 25vw;
+        left: calc(50% + 5vw);
+    }   
+}
