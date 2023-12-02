@@ -6,12 +6,33 @@ html, body {
 }
 
 .main-page {
+    margin: 0;
+    padding: 0;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-image: url("../assets/image/labSketch.svg");
     background-size: cover;
     background-position: center;
+    box-sizing: border-box;
+}
+
+
+#dc {
+    position: absolute;
+    width: 5vw;
+    transition: top 2s, left 2s;
+}
+
+#treg {
+    position: absolute;
+    width: 5vw;
+    transition: top 2s, left 2s;
+}
+
+.svg-image.floating {
+    width: 100%;
+    height: auto;
 }
 
 .svg-image {
@@ -44,8 +65,8 @@ html, body {
 }
 
 #mainfigure {
-    width: 50vw;
-    top: 50vh;
+    width: 40vw;
+    top: 60vh;
     left: 60vw;
 }
 

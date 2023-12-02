@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Lab</title>
+<link rel="stylesheet" href="styles/ve.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Welcome to Dr. H's virtual lab!</h1>
+  <p>Immerse yourself in the vibrant world of scientific discovery right here at Dr. H's Virtual Lab, where you're not just learning about science; you're living it. <br>Place yourself at the core of scientific action and innovation. Assume the critical role of managing our virtual lab mice, learn about DNA gel electrophoresis as you test genotyping tools, <br>and experience analyzing complex experimental data. Your adventure in the realm of science starts now—full of exploration, learning, and groundbreaking virtual experiments. <br>Welcome aboard, and let's begin this exciting scientific voyage together!</p>
+
+
+  <div class="progress-bar-container" data-href="mice.html" onmousemove="moveFigure(event)" onclick="redirectToPage(this)">
+  <span class="button-text">Lab Mice Management</span>
+  <img src="assets/image/mice.svg" alt="Mice" class="object-figure">
+  <img src="assets/image/scientist.svg" alt="Scientist" class="scientist-figure">
+  </div>
+<div class="progress-bar-container" data-href="gel.html" onmousemove="moveFigure(event)" onclick="redirectToPage(this)">
+  <span class="button-text">Genotyping</span>
+  <img src="assets/image/gel.svg" alt="Gel" class="object-figure">
+  <img src="assets/image/scientist.svg" alt="Scientist" class="scientist-figure">
+</div>
+
+<div class="progress-bar-container" data-href="data.html" onmousemove="moveFigure(event)" onclick="redirectToPage(this)">
+  <span class="button-text">Experiment Data Analysis</span>
+  <img src="assets/image/data.svg" alt="Data" class="object-figure">
+  <img src="assets/image/scientist.svg" alt="Scientist" class="scientist-figure">
+</div>
+
+<script src="scripts/ve.js"></script>
+
+</body>
+</html>
