@@ -30,9 +30,18 @@ html, body {
     transition: top 2s, left 2s;
 }
 
-.svg-image.floating {
-    width: 100%;
-    height: auto;
+#dc img[src='assets/image/dc.svg'] {
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -10vh;
+}
+
+#treg img[src='assets/image/treg.svg'] {
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    top: -10vh;
 }
 
 .svg-image {
