@@ -79,6 +79,29 @@ html, body {
     left: 60vw;
 }
 
+#dialogue-box {
+    position: absolute;
+    width: 60vw;
+    height: auto;
+    top: 70vh;
+    left: 10vw;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'East Sea Dokdo', cursive, sans-serif;
+    font-size: 2em;
+    color:#333333;
+}
+
+#dialogue-box p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
 #flowmachine img[src='assets/image/exp.svg'] {
     width: 20vw;
     height: 20vw;
