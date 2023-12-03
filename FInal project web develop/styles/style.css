@@ -5,7 +5,49 @@ html, body {
     height: 100%;
 }
 
-.main-page {
+#loading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #635f63;
+}
+
+#loading-dc img, #loading-tcell img {
+    width: 50px; 
+    height: auto;
+}
+
+.progress {
+    position: relative;
+    height: 10px;
+    width: 500px; 
+    margin: 0 10px; 
+    border: 10px solid #f4a261;
+    border-radius: 15px;
+}
+
+.progress .color {
+    position: absolute;
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progress 4s infinite linear;    
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+    25% { width: 50%; }
+    50% { width: 75%; }
+    75% { width: 85%; }
+    100% { width: 100%; }
+}
+
+.main-container {
     margin: 0;
     padding: 0;
     position: relative;

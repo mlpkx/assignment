@@ -10,7 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
     <body>
-        <div class="main-page">
+        <div id="loading-container">
+            <div id="loading-dc">
+                <img src="assets/image/dc.svg" alt="DC">
+            </div>
+            <div class="progress">
+                <div class="color"></div>
+            </div>
+            <div id="loading-tcell">
+                <img src="assets/image/tcell.svg" alt="Treg">
+            </div>
+        </div>
+    
+        <div class="main-container" style="display: none;">
             <div id="dc">
                 <img src="assets/image/dc.svg" alt="DC" class="svg-image floating">
             </div>

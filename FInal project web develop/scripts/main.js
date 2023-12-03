@@ -1,4 +1,19 @@
+window.onload = function() {
+    setTimeout(function() {
+    var loadingContainer = document.getElementById('loading-container');
+    if (loadingContainer) {
+        loadingContainer.style.display = 'none';
+    }
+
+    var mainContainer = document.querySelector('.main-container');
+    if (mainContainer) {
+        mainContainer.style.display = 'block';
+    }
+}, 3000);
+};
+
 document.addEventListener('DOMContentLoaded', function() {
+
 
     const dcElement = document.getElementById('dc');
     const mainfigureElement = document.getElementById('mainfigure');
