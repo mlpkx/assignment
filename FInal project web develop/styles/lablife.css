@@ -1,0 +1,130 @@
+body {
+  background-color: #fafafa; 
+  background-image:
+    linear-gradient(90deg, rgba(220, 220, 220, 0.5) 1px, transparent 1px),
+    linear-gradient(rgba(220, 220, 220, 0.5) 1px, transparent 1px);
+  background-size: 50px 50px; 
+  background-attachment: fixed; 
+}
+
+h1 {
+    font-size: 4em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-family: 'East Sea Dokdo', cursive, sans-serif;
+  }
+
+h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-family: 'East Sea Dokdo', cursive, sans-serif;
+  }
+
+p {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 100px;
+    font-family: 'Baskervville', sans-serif;
+  }
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.note {
+    background-image: url('../assets/image/frame.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    transform: rotate(-5deg); 
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2); 
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 20px; 
+    transition: transform 0.5s ease;
+  }
+
+.note:hover {
+    transform: rotate(-8deg) scale(1.3);
+    cursor: pointer;
+  }
+
+ #sketch-holder {cursor: pointer;
+    }
+    
+ #intro {
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    font-size: 0.8em;
+    color: #34495e;
+    font-family: 'Baskervville', sans-serif;
+  }
+
+  .cage-highlight {
+    background-image: url(../assets/image/cagemice.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+  .cage-highlight:hover {
+        background: none;
+        text-indent: 0;
+        color: #34495e;
+        font-size: 0.5em;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+  .week-highlight {
+    background-image: url(../assets/image/question.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+  .week-highlight:hover {
+        background: none;
+        text-indent: 0;
+        color: #34495e;
+        font-size: 0.5em;
+        line-height: 50px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+   .sepa-highlight {
+    background-image: url(../assets/image/seperation.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+   
+  .sepa-highlight:hover {
+    background: none;
+    text-indent: 0;
+    color: #34495e;
+    font-size: 0.5em;
+    line-height: 50px;
+    vertical-align: middle;
+    cursor: pointer;
+}

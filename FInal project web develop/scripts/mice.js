@@ -1,18 +1,22 @@
+
+
+
 let allMice = []; 
 let cages = []; 
 
 function setup() {
-  createCanvas(1200, 600);
+  let cnv= createCanvas(1000, 600);
+  cnv.parent('sketch-holder');
 
  
   for (let i = 0; i < 5; i++) {
-    allMice.push(new Mouse(random(50, 250), random(200, 400), true)); //adult
-    allMice.push(new Mouse(random(50, 250), random(200, 400), false)); //pup
+    allMice.push(new Mouse(random(200, 250), random(400, 150), true)); //adult
+    allMice.push(new Mouse(random(200, 250), random(400, 150), false)); //pup
   }
 
   
-  cages.push(new Cage(800, 50, 200, 200, true)); // Cage for adult mice
-  cages.push(new Cage(800, 350, 200, 200, false)); // Cage for pup
+  cages.push(new Cage(600, 50, 200, 200, true)); // Cage for adult mice
+  cages.push(new Cage(600, 350, 200, 200, false)); // Cage for pup
 }
 
 function draw() {

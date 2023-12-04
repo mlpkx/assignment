@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
 .progress-bar-container {
     position: relative;
     width: 80%;
@@ -12,19 +21,29 @@
     justify-content: flex-end;
     overflow: hidden;
   }
-
-  h1 {
-    font-size: 2.5em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    font-family: sans-serif;
+  .progress-bar-container:hover {
+    background-color: #3ca4ed;
+    transition: background-color 0.5s ease;
   }
 
+  h1 {
+    font-size: 4em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-family: 'East Sea Dokdo', cursive, sans-serif;
+  }
+
+  #floating-cell img {
+    width: 50px; 
+    height: auto;
+}
+
   p {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    text-align: center;
     color: #34495e;
     margin-bottom: 100px;
-    font-family: sans-serif;
+    font-family: 'Baskervville', sans-serif;
   }
 
 
