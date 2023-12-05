@@ -3,6 +3,7 @@
 
 let allMice = []; 
 let cages = []; 
+let taskCompleted = false;
 
 function setup() {
   let cnv= createCanvas(1000, 600);
@@ -10,8 +11,8 @@ function setup() {
 
  
   for (let i = 0; i < 5; i++) {
-    allMice.push(new Mouse(random(200, 250), random(400, 150), true)); //adult
-    allMice.push(new Mouse(random(200, 250), random(400, 150), false)); //pup
+    allMice.push(new Mouse(random(100, 300), random(400, 200), true)); //adult
+    allMice.push(new Mouse(random(300, 150), random(300, 400), false)); //pup
   }
 
   
@@ -105,6 +106,22 @@ class Cage {
   }
 }
 
+function checkAllMice() {
+  for (let mouse of allMice) {
+    let isInCorrectCage = false;
+    for (let cage of cages) {
+      if (cage.containsMouse(mouse) && mouse.isAdult === cage.isForAdults) {
+        isInCorrectCage = true;
+        break;
+    }
+  }
+  if (!isInCorrectCage) {
+    return false;
+    }
+  }
+  return true;
+}
+
 function mousePressed() {
   for (let mouse of allMice) {
     mouse.pressed();
@@ -112,6 +129,10 @@ function mousePressed() {
 }
 
 function mouseReleased() {
+  if (taskCompleted) {
+    return;
+  }
+
   for (let mouse of allMice) {
     mouse.released();
 
@@ -119,9 +140,36 @@ function mouseReleased() {
       if (cage.containsMouse(mouse)) {
         if (mouse.isAdult !== cage.isForAdults) {
           alert("Wrong cage! Please place the mouse in the correct cage.");
-        }
-        break;
+        return;
       }
     }
   }
+}
+
+if (checkAllMice()) {
+  alert("Cheers to you for a job well done!");
+  taskCompleted = true;
+  showCompletionPage();
+  }
+}
+
+function showCompletionPage() {
+  document.getElementById('sketch-holder').style.display = 'none';
+
+  let completionDiv = document.createElement('div');
+  completionDiv.id = 'completion-page';
+  document.body.appendChild(completionDiv);
+
+  completionDiv.innerHTML = `
+    <button class="button-style" onclick="goBackToTaskList()">Go back to the task list</button>
+    <button class="button-style" onclick="proceedToNextTask()">Proceed to the next task</button>
+  `;
+}
+
+function goBackToTaskList() {
+  window.location.href = 'virtual exp.html';
+}
+
+function proceedToNextTask() {
+  window.location.href = 'dna.html';
 }
