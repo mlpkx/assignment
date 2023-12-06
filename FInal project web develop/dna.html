@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab life</title>
+    <title>DNA genotyping</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" href="styles/lablife.css">
+    <link rel="stylesheet" href="styles/dna.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
@@ -16,17 +16,17 @@
         <div class="container">
             <div class="header">
                 <h1>Step into the role of scientist and learn about your daily duties</h1>
-                <h2>1. Lab Mouse Colony Management</h2>
-                    <p>Mouse colony management stands as a fundamental aspect of everyday laboratory operations. Within our virtual lab, we meticulously set up <span class="cage-highlight">breeder cages</span>, facilitating the natural process where male and female mice are paired for mating. Approximately three weeks post-mating, a new generation of mice, affectionately known as a litter of pups, is born. 
-                    As these pups mature, significant growth is observed within the first <span class="week-highlight">three weeks</span> of their lives. To uphold the standards of animal welfare, it becomes essential to undertake the process of weaning. This critical step involves carefully <span class="sepa-highlight">separating</span> the baby mice from their parents and relocating them into different cages.</p>
+                <h2>2. Gel Electrophoresis as a Tool for Genotyping</h2>
+                    <p>Genes are like instructions in our cells, and they come in different versions called alleles. Imagine alleles as variations of a recipe, like different versions of a chocolate cake recipe. Each person has pairs of alleles for each gene, one inherited from each parent. If both alleles in the pair are the same (like AA or aa), you're "homozygous" for that gene. If the alleles are different (like Aa), you're "heterozygous." Scientists use a technique called gel electrophoresis to separate and analyze these alleles. In this technique, DNA fragments (representing alleles) are placed in a gel and subjected to an electric current. The fragments move through the gel at different speeds based on their size and charge. After the process, we see bands on the gel, each representing different alleles. By analyzing the position and number of these bands, scientists can determine which alleles a person has.</p>
             </div>
         </div>
             <div class="content">
                 <div id="sketch-holder"></div>
                 <div class="note">
-                    <p id="intro">Could you assist me with managing the <br>mouse work on the left side? <br>Contribute to the well-being and <br>orderly management of our mouse colony. <br>Your task in this interactive module <br>is to assist in this weaning process, <br>ensuring each mouse is placed in the <br>appropriate environment for its stage of life. </p>
+                    <p id="intro">On the left side, we give you a simplified <br>view. Think of genes as coming in pairs, <br>with each pair made up of variations <br>called alleles, like A and a. Smaller DNA fragments (a) generally move faster (starting from the top to the bottom) <br>through the gel than larger ones (A) <br> Help me identify two Aa samples by clicking the bands.
+                    </p>
                 </div>
             </div>
-        <script src="scripts/mice.js"></script>
+        <script src="scripts/dna.js"></script>
     </body>
 </html>

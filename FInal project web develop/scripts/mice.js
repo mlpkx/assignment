@@ -1,6 +1,3 @@
-
-
-
 let allMice = []; 
 let cages = []; 
 let taskCompleted = false;

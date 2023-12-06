@@ -6,7 +6,7 @@
     <title>Lab life</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" href="styles/lablife.css">
+    <link rel="stylesheet" href="styles/data.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
@@ -16,17 +16,16 @@
         <div class="container">
             <div class="header">
                 <h1>Step into the role of scientist and learn about your daily duties</h1>
-                <h2>1. Lab Mouse Colony Management</h2>
-                    <p>Mouse colony management stands as a fundamental aspect of everyday laboratory operations. Within our virtual lab, we meticulously set up <span class="cage-highlight">breeder cages</span>, facilitating the natural process where male and female mice are paired for mating. Approximately three weeks post-mating, a new generation of mice, affectionately known as a litter of pups, is born. 
-                    As these pups mature, significant growth is observed within the first <span class="week-highlight">three weeks</span> of their lives. To uphold the standards of animal welfare, it becomes essential to undertake the process of weaning. This critical step involves carefully <span class="sepa-highlight">separating</span> the baby mice from their parents and relocating them into different cages.</p>
+                <h2>3. Experimental Data Analysis</h2>
+                    <p>We use a technique called flow cytometry to pinpoint specific groups of cells that interest us, which is a crucial first step in understanding how these cells function. Think of a flow cytometry plot as a starry sky, where each star is a cell. The position of each star, or cell, in relation to the axes tells us about the presence and amount of certain markers on that cell. By observing how these stars cluster together, we can identify groups of cells based on their unique markers. For example, regulatory T cells, which are essential in shielding us from harmful immune responses, can be identified by their high levels of two markers: CD4 and Foxp3. Imagine being able to spot these important cells in a flow cytometry plot, much like picking out constellations in the night sky.</p>
             </div>
         </div>
             <div class="content">
                 <div id="sketch-holder"></div>
                 <div class="note">
-                    <p id="intro">Could you assist me with managing the <br>mouse work on the left side? <br>Contribute to the well-being and <br>orderly management of our mouse colony. <br>Your task in this interactive module <br>is to assist in this weaning process, <br>ensuring each mouse is placed in the <br>appropriate environment for its stage of life. </p>
+                    <p id="intro">Could you identify the three distinct <br>clusters depicted in the data <br>visualization on the left side? <br>Among these, which cluster represents regulatory T cells, and what are the <br>reasons that lead to this identification?</p>
                 </div>
             </div>
-        <script src="scripts/mice.js"></script>
+        <script src="scripts/data.js"></script>
     </body>
 </html>
