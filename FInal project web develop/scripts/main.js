@@ -130,6 +130,10 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.currentTime = 0;
     });
 
+    microscope.addEventListener('click', function() {
+        window.location.href = 'cell.html';
+    });
+
     var graphic = document.querySelector('#graphic img');
     var originalGraphicSrc = graphic.getAttribute('src');
     var newGraphicSrc = 'assets/image/paper.svg'; 
@@ -145,6 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
         graphic.setAttribute('src', originalGraphicSrc);
         audio.pause();
         audio.currentTime = 0;
+    });
+
+    graphic.addEventListener('click', function() {
+        window.location.href = 'https://scholar.google.com/citations?user=PDv3flgAAAAJ&hl=en';
     });
 
     var mainfigure = document.querySelector('#mainfigure img');
@@ -164,6 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.currentTime = 0;
     });
 
-
+    mainfigure.addEventListener('click', function() {
+        window.location.href = 'aboutme.html';
+    });
 
 });

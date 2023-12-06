@@ -136,7 +136,7 @@ function mouseReleased() {
     for (let cage of cages) {
       if (cage.containsMouse(mouse)) {
         if (mouse.isAdult !== cage.isForAdults) {
-          alert("Wrong cage! Please place the mouse in the correct cage.");
+          alert('Wrong cage! Please place the mouse in the correct cage.');
         return;
       }
     }
@@ -144,7 +144,7 @@ function mouseReleased() {
 }
 
 if (checkAllMice()) {
-  alert("Cheers to you for a job well done!");
+  alert('Cheers to you for a job well done!');
   taskCompleted = true;
   showCompletionPage();
   }
@@ -158,8 +158,8 @@ function showCompletionPage() {
   document.body.appendChild(completionDiv);
 
   completionDiv.innerHTML = `
-    <button class="button-style" onclick="goBackToTaskList()">Go back to the task list</button>
-    <button class="button-style" onclick="proceedToNextTask()">Proceed to the next task</button>
+    <button class='button-style' onclick='goBackToTaskList()'>Go back to the task list</button>
+    <button class='button-style' onclick='proceedToNextTask()'>Proceed to the next task</button>
   `;
 }
 
