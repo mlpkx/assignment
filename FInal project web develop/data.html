@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab life</title>
+    <title>Lab life-data</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" href="styles/data.css">
@@ -15,16 +15,23 @@
     <body>
         <div class="container">
             <div class="header">
-                <h1>Step into the role of scientist and learn about your daily duties</h1>
+                <h1>Learn about your daily duties and finish the lab notes</h1>
                 <h2>3. Experimental Data Analysis</h2>
-                    <p>We use a technique called flow cytometry to pinpoint specific groups of cells that interest us, which is a crucial first step in understanding how these cells function. Think of a flow cytometry plot as a starry sky, where each star is a cell. The position of each star, or cell, in relation to the axes tells us about the presence and amount of certain markers on that cell. By observing how these stars cluster together, we can identify groups of cells based on their unique markers. For example, regulatory T cells, which are essential in shielding us from harmful immune responses, can be identified by their high levels of two markers: CD4 and Foxp3. Imagine being able to spot these important cells in a flow cytometry plot, much like picking out constellations in the night sky.</p>
+                    <p>We use a technique called flow cytometry to pinpoint specific groups of cells that interest us, which is a crucial first step in understanding how these cells function. Think of a flow cytometry plot as a starry sky, where each <span class="star-highlight">star</span>is a cell. The position of each star, or cell, in relation to the axes tells us about the presence and amount of certain markers on that cell. By observing how these stars cluster together, we can identify groups of cells based on their unique markers. For example, regulatory T cells, which are essential in shielding us from harmful immune responses, can be identified by their high levels of two markers: CD4 and Foxp3. Imagine being able to spot these important cells in a flow cytometry plot, much like picking out constellations in the night sky.</p>
             </div>
         </div>
+        <h2>3.1 Exercise</h2>
             <div class="content">
                 <div id="sketch-holder"></div>
                 <div class="note">
                     <p id="intro">Could you identify the three distinct <br>clusters depicted in the data <br>visualization on the left side? <br>Among these, which cluster represents regulatory T cells, and what are the <br>reasons that lead to this identification?</p>
                 </div>
+            </div>
+            
+            <div class="button-return">
+                <a href="index.html" target="_blank">
+                        <img src="assets/image/fig1.svg" alt="Go back to the main room" title="Take me back to the main room."></a>
+                    </a>
             </div>
         <script src="scripts/data.js"></script>
     </body>

@@ -33,10 +33,19 @@ function shuffleArray(array) {
   }
 }
 
+function drawArrow (x, y, length) {
+  let arrowSize = 10;
+  stroke(0);
+  line(x, y, length, y + length);
+  line(x, y + length, x - arrowSize / 2, y + length - arrowSize);
+  line(x, y + length, x + arrowSize / 2, y + length - arrowSize);
+}
+
 function draw() {
   background(255);
   drawLadder();
   drawSamples();
+  drawArrow(100, 500, 100);
 }
 
 function drawLadderToSamplesConnector() {
@@ -72,12 +81,23 @@ function drawBand(x, y) {
   
   
 function drawSamples() {
-  for (let sample of samples) {
+  for (let i=0; i<samples.length; i++) {
+    let sample = samples[i];
     stroke(sample.clicked ? color(255, 0, 0) : color(0)); // Red color if for clicked samples
     for (let y of sample.positions) {
       line(sample.x, y, sample.x + 20, y); 
     }
-  }
+    fill(0);
+    noStroke();
+    text(i+1, sample.x + 10, height - 10);
+
+    if (sample.type === 'Aa' && sample.clicked) {
+      fill(0);
+      noStroke();
+      text('(Aa)', sample.x + 10, height - 50);
+    }
+  
+}
 }
 
 function checkAllSamples() {
@@ -99,15 +119,18 @@ function mouseClicked() {
   }
 
   if (!taskCompleted && checkAllSamples()) {
-    alert("Cheers to you for a job well done!");
     taskCompleted = true;
-    showCompletionPage();
+    setTimeout(function() {
+      alert("Cheers to you for a job well done!");
+      showCompletionPage();
+    }, 100);
 }
 }
 
 
 function showCompletionPage() {
   document.getElementById('sketch-holder').style.display = 'none';
+  document.querySelector('.note').style.display = 'none';
 
   let completionDiv = document.createElement('div');
   completionDiv.id = 'completion-page';

@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNA genotyping</title>
+    <title>immune cells</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" href="styles/dna.css">
+    <link rel="stylesheet" href="styles/cell.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>Under Development</h1>
+<body> 
+    <h1> 
+        <div class="image-audio">
+        <a href="https://www.annualreviews.org/doi/full/10.1146/annurev-cancerbio-030419-033428" target="_blank">
+        <img src="../assets/image/fig2.svg" alt="scientist-figure" title="Click me to read the paper">
+        </a>
+            <div class="audio-player">
+                <audio controls>
+                <source src="../assets/sound/Forestweep.mp3" type="audio/mpeg">
+                Your browser does not support this audio file.
+                </audio>
             </div>
         </div>
-        <script src="scripts/dna.js"></script>
-    </body>
+        A type of cell called "regulatory T (Treg) cells" plays a key role in immune regulation. <br>These cells usually prevent autoimmune diseases and control inflammation, 
+        <br>but in cancer, they could also help tumors grow.
+        <br>Scientists are exploring ways to manipulate them in cancer treatments.
+        <br>Hover over the image to investigate Treg cells in cancer.
+    </h1> 
+      
+    <div class="main_box"> 
+        <div class="img"></div> 
+        <div class="mouse"></div> 
+    </div> 
+    
+    <script src="scripts/cell.js"></script>
+</body>
 </html>

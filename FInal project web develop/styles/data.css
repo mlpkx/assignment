@@ -69,6 +69,26 @@ p {
     font-family: 'Baskervville', sans-serif;
   }
 
+  .star-highlight {
+    background-image: url(../assets/image/star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+
+  .star-highlight:hover {
+        background: none;
+        text-indent: 0;
+        color: #000000;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
 .button-style {
   background-color: #2c3e50;
   color: white;
@@ -84,3 +104,27 @@ p {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+img {
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+}
+
+.button-return {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@keyframes shake {
+  0%, 100% {transform: rotate(-5deg);}
+  50% {transform: rotate(5deg);}
+}
+
+.button-return a img:hover {
+  animation: shake 0.5s ease-in-out infinite;
+}
+

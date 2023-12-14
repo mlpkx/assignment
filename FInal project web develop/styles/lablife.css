@@ -74,7 +74,7 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 50px;
+    width: 60px;
     height: 30px;
     text-indent: -9999px;
     overflow: hidden;
@@ -83,8 +83,8 @@ p {
   .cage-highlight:hover {
         background: none;
         text-indent: 0;
-        color: #34495e;
-        font-size: 0.5em;
+        color:#000000;
+        font-size: 0.6em;
         vertical-align: middle;
         cursor: pointer;
     }
@@ -94,7 +94,7 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 70px;
+    width: 80px;
     height: 50px;
     text-indent: -9999px;
     overflow: hidden;
@@ -103,8 +103,8 @@ p {
   .week-highlight:hover {
         background: none;
         text-indent: 0;
-        color: #34495e;
-        font-size: 0.5em;
+        color: #000000;
+        font-size: 0.6em;
         line-height: 50px;
         vertical-align: middle;
         cursor: pointer;
@@ -124,8 +124,8 @@ p {
   .sepa-highlight:hover {
     background: none;
     text-indent: 0;
-    color: #34495e;
-    font-size: 0.5em;
+    color: #000000;
+    font-size: 0.6em;
     line-height: 50px;
     vertical-align: middle;
     cursor: pointer;
@@ -146,3 +146,27 @@ p {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+img {
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+}
+
+.button-return {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@keyframes shake {
+  0%, 100% {transform: rotate(-5deg);}
+  50% {transform: rotate(5deg);}
+}
+
+.button-return a img:hover {
+  animation: shake 0.5s ease-in-out infinite;
+}
+

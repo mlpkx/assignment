@@ -76,6 +76,13 @@ function drawClusters() {
     for (let point of clusters[i]) {
       ellipse(point.x, height - point.y, 5, 5);
     }
+
+    let associatedSquare = squares.find(sq => sq.clusterIndex === i);
+    if (i === 1 && associatedSquare && associatedSquare.clicked) {
+      fill(0);
+      noStroke();
+      text('Regulatory T cells', centers[i].x, height - centers[i].y - squareSize / 2 - 10);
+    }
   }
 }
 
@@ -104,7 +111,12 @@ function mousePressed() {
       let squareX = clusterCenter.x - squareSize / 2;
       let squareY = height - clusterCenter.y - squareSize / 2;
     
-      squares.push({ x: squareX, y: squareY });
+      let existingSquare = squares.find(sq => sq.clusterIndex === i);
+      if (existingSquare) {
+        existingSquare.clicked = true; 
+      } else {
+        squares.push({ x: squareX, y: squareY, clusterIndex: i, clicked: true }); 
+      }
       break; 
     }
   }
@@ -123,6 +135,7 @@ function mousePressed() {
 
 function showCompletionPage() {
   document.getElementById('sketch-holder').style.display = 'none';
+  document.querySelector('.note').style.display = 'none';
 
   let completionDiv = document.createElement('div');
   completionDiv.id = 'completion-page';

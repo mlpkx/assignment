@@ -152,7 +152,8 @@ if (checkAllMice()) {
 
 function showCompletionPage() {
   document.getElementById('sketch-holder').style.display = 'none';
-
+  document.querySelector('.note').style.display = 'none';
+  
   let completionDiv = document.createElement('div');
   completionDiv.id = 'completion-page';
   document.body.appendChild(completionDiv);

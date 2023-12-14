@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNA genotyping</title>
+    <title>Lab life-DNA genotyping</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" href="styles/dna.css">
@@ -15,18 +15,26 @@
     <body>
         <div class="container">
             <div class="header">
-                <h1>Step into the role of scientist and learn about your daily duties</h1>
+                <h1>Learn about your daily duties and finish the lab notes</h1>
                 <h2>2. Gel Electrophoresis as a Tool for Genotyping</h2>
-                    <p>Genes are like instructions in our cells, and they come in different versions called alleles. Imagine alleles as variations of a recipe, like different versions of a chocolate cake recipe. Each person has pairs of alleles for each gene, one inherited from each parent. If both alleles in the pair are the same (like AA or aa), you're "homozygous" for that gene. If the alleles are different (like Aa), you're "heterozygous." Scientists use a technique called gel electrophoresis to separate and analyze these alleles. In this technique, DNA fragments (representing alleles) are placed in a gel and subjected to an electric current. The fragments move through the gel at different speeds based on their size and charge. After the process, we see bands on the gel, each representing different alleles. By analyzing the position and number of these bands, scientists can determine which alleles a person has.</p>
+                    <p>Genes are like instructions in our cells, and they come in different versions called alleles. Imagine alleles as variations of a recipe, like different versions of a chocolate cake recipe. Each person has pairs of alleles for each gene, one inherited from each parent. If both alleles in the pair are the same (like AA or aa), you're "homozygous" for that gene. If the alleles are different (like Aa), you're "heterozygous." Scientists use a technique called gel electrophoresis to separate and analyze these alleles. In this technique, <span class="dna-highlight">DNA</span>fragments (representing alleles) are placed in a gel and subjected to an electric current. The fragments move through the gel at different speeds based on their size and charge. After the process, we see bands on the gel, each representing different alleles. By analyzing the position and number of these bands, scientists can determine which alleles a person has.</p>
             </div>
         </div>
+        <h2>2.1 Exercise</h2>
             <div class="content">
                 <div id="sketch-holder"></div>
                 <div class="note">
-                    <p id="intro">On the left side, we give you a simplified <br>view. Think of genes as coming in pairs, <br>with each pair made up of variations <br>called alleles, like A and a. Smaller DNA fragments (a) generally move faster (starting from the top to the bottom) <br>through the gel than larger ones (A) <br> Help me identify two Aa samples by clicking the bands.
+                    <p id="intro">On the left side, we give you a simplified <br>view. Think of ten gene samples, <br>with each pair made up of variations <br>called alleles, like A and a. Smaller DNA fragments (a) generally move faster (top to bottom) through the gel than larger ones (A) <br> Help me identify two Aa samples by clicking the bands.
                     </p>
                 </div>
             </div>
+
+            <div class="button-return">
+                <a href="index.html" target="_blank">
+                        <img src="assets/image/fig1.svg" alt="Go back to the main room" title="Take me back to the main room."></a>
+                    </a>
+            </div>
+            
         <script src="scripts/dna.js"></script>
     </body>
 </html>
