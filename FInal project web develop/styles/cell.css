@@ -24,7 +24,7 @@ h1 img {
 }
 
 .main_box, 
-.img, 
+.img-bg, 
 .mouse { 
     position: absolute; 
     top: 0; 
@@ -42,7 +42,7 @@ img {
     margin-top: 20em; 
 } 
   
-.img, 
+.img-bg, 
 .mouse { 
     background-image: url( 
 '../assets/image/Tregs.jpg');
@@ -52,7 +52,7 @@ img {
 } 
   
 
-.img { 
+.img-bg { 
     filter: brightness(10%); 
 } 
   
