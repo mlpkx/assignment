@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Map Tooltips</title>
+<link rel="stylesheet" href="styles/map.css">
+</head>
+<body>
+<div class="download-buttons">
+  <a href="assets/dark1.png" download="High_Quality_Visualization_Dark.jpg" class="button">Download high-quality visulization dark mode</a>
+  <a href="assets/light1.png" download="High_Quality_Visualization_Light.jpg" class="button">Download high-quality visulization light mode</a>
+  <a href="https://shotoku.repo.nii.ac.jp/record/543/files/KJ00000730572.pdf" download="Reference_Paper.pdf" class="button">Download reference paper</a>
+</div>
+
+<div class="zoom-controls">
+  <button id="zoomIn">Zoom In</button>
+  <button id="zoomOut">Zoom Out</button>
+</div>
+
+<div class="map-container">
+  <img src="assets/dark2.png"  alt="Network" usemap="#interactiveMap">
+
+  <map name="interactiveMap">
+    <area shape="rect" coords="345, 80, 700, 300" href="courtier.html" alt="courtier">
+    <area shape="rect" coords="1037, 122, 1200, 200" href="others.html" alt="Others">
+    <area shape="rect" coords="159, 523, 800, 800" href="family.html" alt="family">
+    <area shape="rect" coords="1100, 400, 1400, 509" href="attendant.html" alt="attendant">
+    <area shape="rect" coords="1100, 500, 1200, 700" href="princess.html" alt="princess">
+
+</map>
+</div>
+
+
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

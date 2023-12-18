@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courtier Page</title>
+<link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+
+  <h1>Read me <br>before you examine <br>the network visualization.</h1>
+  <p>This network visualization displays the social connections established through poetry, focusing on the central figure, 
+    Princess Kishi (also known as Princess Noriko, 949–986). Princess Kishi served as Saiō at the <a href="https://www.bunka.pref.mie.lg.jp/saiku/p0048200001.htm">Saigū institution </a> near 
+    <a href="https://www.isejingu.or.jp/en/">the Ise Shrine</a> from 975 to 984. Her mother, <a href="http://portlandartmuseum.us/mwebcgi/mweb.exe?request=record;id=78939;type=101">Saigū no Nyōgo (929–985)</a>, also served in this role from 936 to 945. 
+    <br>This data was collected, transcribed, and curated from the poetry data found in Professor Kyoko Tokoro’s article 
+    “Ise Saigū Kankei Waka Shūsei Heian Chūki o Chūshin ni shite,” and Professor Takuya Tamagami’s modern translations of poems 
+    in the Saigū no Nyōgo Shū (Poetic Anthology of The Saigū Consort, late 10th century) as featured in the book <a href="https://search.worldcat.org/title/23206741">Saigū Nyōgo shū chūshaku</a>.
+     <br><a href="https://drive.google.com/drive/folders/1K49sPeKm4jjUDkgjWEMRZBuoL-ZdAAGZ?usp=sharing">My dataset</a> comprises 91 poems by 22 poets, including Kishi herself. These poems are categorized into poetic exchanges, 
+     poetry contests, ceremonial poems, and those composed on behalf of Kishi. Connections (edges) between poets (nodes) 
+     are further identified by five categories, with one additional category beyond the previous four poem types. 
+     When two poets engage in an exchange about a third figure (often Kishi in this study), 
+     it is considered an indirect mention of that figure. Similarly, when poets participate in a contest with themes or 
+     locations related to a third figure, this also constitutes an indirect mention. The indirect mention is 
+     the fifth type of connections. 
+    <br> The size of the circles (nodes) in the network map represents the number of poems written by each poet. 
+     This means that larger circles indicate poets who have composed a greater number of poems.
+    The colors of the circles are defined by the types of their social identities. There is one circle (No.23) in the map that is not a poet but is the recipient of a poem. I counted her as well.
+    <br>In this map, Princess Kishi is highlighted in <span style="color: rgb(54, 144, 192);"><b>(Blue)</b></span>, and the other figures are divided into four categories: 
+    courtiers, members of the imperial family, attendants, and others. The “courtier” category <span style="color: rgb(27, 158, 119);"><b>(Green)</b></span> refers to 
+    people of the aristocracy in the imperial court during the Heian period (794–1185). The “imperial family” category <span style="color: rgb(217, 95, 2);"><b>(Orange)</b></span>
+    includes those who are part of the broader imperial family but may not be direct relatives of Kishi. 
+    The “attendants” category <span style="color: rgb(231, 41, 138);"><b>(Deep Pink)</b></span> encompasses Kishi’s servants and officials at the Saigū institution. 
+    The “others” category <span style="color: rgb(117, 112, 179);"><b>(Purple)</b></span> includes attendants of Kishi’s mother Saigū no Nyōgo and unidentified poets (unknown). 
+    <br>The solid lines <b>(—)</b> represent direct connections between two circles, encompassing various interactions such as poetic exchanges, 
+    poetry contests, ceremonial poems, and compositions made on behalf of others. The dash-dot <b>(- -- -)</b> lines indicate indirect mentions,
+    primarily involving Kishi in this study. The thickness of these lines corresponds to the frequency of each interaction 
+    within the dataset, serving as a measure of the weight (significance) of these connections. I marked the two type of lines in different colors in both the light and dark modes to make them easier to distinguish.
+    </p>
+
+
+</body>
+</html>
