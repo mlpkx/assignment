@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson on difflib: Comparing Poetry Texts</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .content {
+            padding: 15px;
+            background: #ffffff;
+            margin-top: 10px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Python difflib for Poetry Writing Systems</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Back to Main Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+        <h1>Lesson: Utilizing Python's difflib for Poetry Analysis</h1>
+
+        <h2>Lesson Goals</h2>
+        <p>In this lesson, you will learn how to utilize Python's "difflib" library to compare different versions of poetry texts. You will learn to read, prepare, and process textual data of poems, and generate a visual representation of differences between versions. This skill is valuable for studying poems in various manuscripts with distinct compositions of Kanji and Kana.</p>
+
+        <h2>Concept Explanation</h2>
+        <p>Waka is a traditional form of Japanese poetry. It's structured in a pattern of 5-7-5-7-7 syllables. This format gives waka its rhythmic quality. For more insight, explore an example of waka at <a href="https://www.wakapoetry.net/kks-ii-113/">this link</a> and listen to a traditional recitation <a href="https://www.youtube.com/watch?v=kdw89TNP0DE&t=867s">here</a>.</p>
+
+        <p>The writing system (<i>hyōki</i>) in waka involves kanji and kana. "difflib" helps trace the distinct features of each version for further writing system analysis.</p>
+
+        <h2>Examples</h2>
+        <p>In the following examples, you will read one poem in three different <i>hyōki systems</i>.</p>
+        <p>Example 1: 花の色は うつりにけりな いたづらに わが身世にふる ながめせしまに</p>
+        <p>Example 2: 花の色は うつりにけりな いたづらに わが身よにふる ながめせしまに</p>
+        <p>Example 3: はなのいろは うつりにけりな いたずらに わがみよにふる ながめせしまに</p>
+
+        <h2>Preparation</h2>
+        <p>Collect different versions of poetry texts for comparison. In this lesson, we use Japanese poems from Yoshino Ki. 
+            Explore the texts <a href="https://open.library.ubc.ca/collections/jsc/items/1.0418470">here</a> 
+            and <a href="https://www.kanzaki.com/works/2016/pub/image-annotator?manifest=https://kotenseki.nijl.ac.jp/biblio/200008170/manifest#p3">here</a>. And watch how we digitize the manuscript <a href="https://www.youtube.com/watch?v=FCtx_f--u8w">here.</a></p>
+
+        <h2>Using difflib</h2>
+        <p><code>import difflib</code></p>
+        <p>Use difflib to compare texts and visualize differences. See the Python documentation for difflib <a href="https://docs.python.org/3/library/difflib.html">here</a>. See the detailed process in this Google Colab notebook <a href="https://colab.research.google.com/drive/1WpaHfFVYanK6UwiieS36bqXWBZsvGHPR?usp=sharing">here.</a></p>
+
+        <h2>Further Reading</h2>
+        <p>Explore more about working with text files in Python at <a href="https://programminghistorian.org/en/lessons/working-with-text-files">Programming Historian</a>.</p>
+
+        <h2>Export Results</h2>
+        <p>Click the Files button on the left sidebar in Colab and download the file <code>combined_poems_diff_output.html</code> to see the result. Use a browser to open <a href="combined_poems_diff_output.html">the HTML file</a>.</p>
+    </div>
+</body>
+</html>
